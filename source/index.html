@@ -4,13 +4,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Title</title>
+  <title>Газпром-Инвест Официальный сайт</title>
+  <meta name="description"
+    content="Несмотря на санкции, количество клиентов у Газпрома остается значительным, спрос на газ не уменьшается, и компания продолжает расти.
+  Поэтому Газпром не обращает внимания на санкции и уверенно продвигает свою программу, которая только увеличивает объемы производства и продаж.">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 </head>
@@ -23,6 +26,7 @@
           <use xlink:href="img/sprite.svg#logo"></use>
         </svg>
       </div>
+
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a href="#whu">Почему мы</a></li>
@@ -37,16 +41,69 @@
           <span class="main-nav__open-btn-text visually-hidden">Mеню</span>
         </button>
       </nav>
+
     </div>
   </header>
   <main class="main">
     <section class="promo">
       <div class="promo__wrapper container">
-        <div class="promo__video">
-          Видео
+        <div class="promo__video-bcg">
+          <div class="promo__video">
+            <iframe src="https://www.youtube.com/embed/d5CQUYYCdZ0"
+              style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+              allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+            </iframe>
+          </div>
         </div>
+
         <div class="promo__form">
-          Форма
+          <style>
+            .form_message.error.inactive {
+              display: none;
+            }
+
+            .form_message.error.active {
+              display: block;
+              color: #0a0a0a;
+            }
+
+            .error {
+              color: #831B1B;
+              border-color: #831B1B !important;
+            }
+
+            label.error {
+              margin-top: -25px;
+              text-align: right;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 15px;
+            }
+
+            #phone1-error,
+            #phone2-error {
+              display: flex;
+              justify-content: end;
+              margin-top: 5px;
+            }
+          </style>
+          <form action="#" class="form" method="POST" id="leadform1">
+            <h2 class="form__heading">Начните зарабатывать на государственном газе!</h2>
+            <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+            <input type="email" name="email" id="email" placeholder="Эл. адрес">
+            <input type="tel" name="phone1" placeholder="" id="phone1" />
+            <input id="realPhone1" class="hidden-phone" type="hidden" name="phone" value="" />
+            <input type="hidden" name="currency" value="usd">
+            <input id="country1" type="hidden" name="country" value="ru">
+            <input type="hidden" name="comment" class="comment" value="">
+            <input type="hidden" name="campaign_name" value="">
+            <button class="btn submit_btn" type="submit">
+              <span>Подать заявку</span>
+            </button>
+            <div class="form_message error inactive"
+              style="margin:15px 0;background-color: #ffd4d4;border: 2px dashed #ce0909;border-radius: 10px;padding: 20px;max-width: 350px;">
+            </div>
+          </form>
         </div>
       </div>
     </section>
