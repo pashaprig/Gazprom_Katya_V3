@@ -1,48 +1,24 @@
 .main-nav {
-  //Desktop-first
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
   display: flex;
-  align-items: center;
-  padding: 40px 0;
+  height: 711px;
+  min-width: 532px;
+  padding: 210px 216px 0 63px;
+  background: $menu-btn;
 
-  .btn {
-    display: none;
+  & svg {
+    fill: $main-color;
   }
 
-  @media (max-width: $tablet-width) {
-    box-sizing: border-box;
-    z-index: 2;
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-height: 100vh;
-    width: 100%;
-    padding: 25px 16px;
-    background: $white-text;
+  &--closed {
+    background: transparent;
 
+    & .main-nav__list,
     .btn {
-      display: flex;
-    }
-
-    & svg {
-      fill: $main-color;
-    }
-
-    & .main-nav__item > a {
-      color: $bcg-black;
-    }
-
-    .btn {
-      margin-top: 38vh;
-    }
-
-    &--closed {
-      background: transparent;
-
-      & .main-nav__list,
-      .btn {
-        display: none;
-      }
+      display: none;
     }
   }
 }
@@ -52,9 +28,7 @@
 }
 
 .main-nav--nojs .main-nav__list {
-  @media (max-width: $tablet-width) {
-    display: block;
-  }
+  display: block;
 }
 
 .main-nav__list {
@@ -62,26 +36,21 @@
   align-items: center;
   gap: 34px;
 
-  @media (max-width: $tablet-width) {
-    margin-top: 50px;
-    display: block;
+  margin-top: 50px;
+  display: block;
 
-    &--bottom {
-      margin-top: 20px;
-    }
+  &--bottom {
+    margin-top: 20px;
   }
 }
 
 .main-nav__item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 28px;
+  margin-bottom: 20px;
   cursor: pointer;
-
-  @media (max-width: $tablet-width) {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    min-height: 28px;
-    margin-bottom: 20px;
-  }
 }
 
 .main-nav__item {
@@ -92,14 +61,8 @@
     color: $white-text;
   }
 
-  &--blc a {
-    color: $bcg-black;
-  }
-
-  @media (max-width: $tablet-width) {
-    font-size: 18px;
-    line-height: 21px;
-  }
+  font-size: 18px;
+  line-height: 21px;
 
   &:hover {
     opacity: 0.7;
@@ -112,9 +75,8 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 26px;
-  right: 16px;
-  display: none;
+  top: 50px;
+  right: 60px;
   z-index: 2;
   width: 45px;
   height: 45px;
@@ -123,10 +85,6 @@
   border: none;
   border-radius: 40px;
   cursor: pointer;
-
-  @media (max-width: $tablet-width) {
-    display: block;
-  }
 }
 
 // Бургер на css
@@ -137,8 +95,8 @@
   right: 0;
   width: 45px;
   height: 6px;
-  background-color: $main-color;
-  box-shadow: 0 12px 0 0 $main-color, 0 24px 0 0 $main-color;
+  background-color: $menu-btn;
+  box-shadow: 0 12px 0 0 $menu-btn, 0 24px 0 0 $menu-btn;
   border-radius: 15px;
 }
 
@@ -156,7 +114,7 @@
   display: none;
 }
 
-//Крестик на css
+// Крестик на css
 .main-nav--opened .main-nav__toggle {
   &::before,
   &::after {
@@ -187,16 +145,5 @@
   &:active::before,
   &:active::after {
     opacity: 0.3;
-  }
-}
-
-.main-nav__open-btn-text {
-  font-family: "Segoe-UI", "Arial", sans-serif;
-  color: $basic-black;
-
-  @media (max-width: $tablet-width) {
-    font-weight: 350;
-    font-size: 14px;
-    line-height: 120%;
   }
 }

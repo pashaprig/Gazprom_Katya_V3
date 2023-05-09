@@ -1,12 +1,7 @@
 .page-body {
   margin: 0;
   font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-
-  @media (min-width: $tablet-width) {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
 }

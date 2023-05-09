@@ -50,21 +50,12 @@ button {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: $main-color;
-  background-color: transparent;
-  border: 1px solid $main-color;
+  color: $basic-white;
+  background-color: $main-color;
+  border: none;
 
   & svg {
     fill: $main-color;
-  }
-
-  &:hover {
-    color: $bcg-black;
-    background-color: $main-color;
-
-    svg {
-      fill: $bcg-black;
-    }
   }
 
   &:active {
@@ -73,6 +64,7 @@ button {
 }
 
 .container {
+  flex-grow: 1;
   box-sizing: border-box;
   max-width: 1280px;
   margin: 0 auto;
