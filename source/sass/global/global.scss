@@ -18,6 +18,7 @@ html {
 h1,
 h2,
 h3,
+h4,
 p,
 ul,
 blockquote {
@@ -56,6 +57,10 @@ button {
 
   & svg {
     fill: $main-color;
+  }
+
+  &:hover {
+    background: $btn-hover;
   }
 
   &:active {

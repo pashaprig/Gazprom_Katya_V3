@@ -12,8 +12,13 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
+    color: $main-color;
     background: $bcg-input;
     border: none;
+
+    &:hover {
+      outline: 1px solid $main-color;
+    }
   }
 }
 
