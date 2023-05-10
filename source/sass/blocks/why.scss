@@ -1,0 +1,52 @@
+.why {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 72px 102px;
+  color: $basic-white;
+  background: $menu-btn;
+
+  .why__item {
+    svg {
+      margin-bottom: 50px;
+    }
+
+    svg.different path {
+      stroke: $basic-white;
+    }
+
+    svg.svg {
+      fill: $basic-white;
+    }
+  }
+
+  &--invert-color {
+    color: $text-black;
+    background: transparent;
+
+    .why__item {
+      svg.different path {
+        stroke: $main-color;
+      }
+
+      svg.svg {
+        fill: $main-color;
+      }
+    }
+  }
+}
+
+.why__heading {
+  max-width: 530px;
+  margin: 0 auto;
+  margin-bottom: 150px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  text-align: center;
+}
+
+.why__list {
+  display: flex;
+  gap: 100px;
+}
