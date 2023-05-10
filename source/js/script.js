@@ -3,7 +3,7 @@
 class App {
   init() {
     this.initMobileMenu();
-    this.initLog();
+    this.initRange();
   }
 
   initMobileMenu() {
@@ -54,12 +54,27 @@ class App {
     linksClick();
   }
 
-  initLog() {
-    const log = () => {
-      console.log('log')
-    }
-
-    log();
+  initRange() {
+    $(function () {
+      $(".js-range-slider").ionRangeSlider({
+        skin: "round",
+        hide_min_max: false,
+        hide_from_to: true,
+        min: 18000,
+        max: 1000000,
+        from: 18000,
+        max_postfix: "+",
+        postfix: " руб.",
+        grid: false,
+        onStart: function (data) {
+          $("#calcResult").text(Math.round((data.from * 0.32) + data.from) + ' руб.');
+        },
+        onChange: function (data) {
+          $("#profitValue").text(data.from + ' руб.');
+          $("#calcResult").text(Math.round((data.from * 0.32) + data.from) + ' руб.');
+        },
+      });
+    });
   }
 }
 

@@ -189,7 +189,7 @@
           <div class="start__info start__info--revers-order">
             <picture>
               <source type="image/webp" srcset="img/img/head.webp">
-              <img class="start__img" src="img/img/head.jpg" height="612" width="529" alt="Рабочий">
+              <img class="start__img" src="img/img/head.jpg" height="612" width="529" alt="Глава газпром">
             </picture>
             <div class="start__text-wrapper">
               <p class="start__about">Мы приняли решение открыть доступ для инвестиций от всех граждан, поскольку это
@@ -205,12 +205,53 @@
         </div>
       </div>
     </section>
+
+    <section class="profit" id="profit">
+      <div class="profit__wrapper container">
+        <h2 class="profit__heading">Расчитайте свой заработок</h2>
+        <form action="#" method="post" class="form form--range">
+          <div class="flex flex-col text-center font-bold mb-4 sm:mb-10 px-5">
+            <label class="block text-center font-bold mb-2">Ваша инвестиция</label>
+            <span id="profitValue">18000 руб.</span>
+            <input type="text" class="js-range-slider" name="my_range" value="150" />
+          </div>
+          <div class="flex flex-col mb-5">
+            <label class="block text-center font-bold ">Ваша прибыль</label>
+            <h3 class="text-2xl text-center font-bold font-ubuntu mt-5" id="calcResult"></h3>
+          </div>
+          <div class="flex mb-4 justify-center">
+            <a href="#register" class="inline-block  text-center w-56 font-sans font-bold transition bg-btn-primary hover:bg-btn-hover
+         text-white rounded py-3">
+              Подать заявку
+            </a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="license">
+      <div class="license__wrapper container">
+        <h2 class="license__heading">Лицензия профессионального участника рынка ценных бумаг«Газпром-Инвест»</h2>
+        <p class="license__about">Лицензия №045-13980-02000 От 13.12.2019 Профессиональной и биржевой деятельности по
+          ценным бумагам ПАО&nbsp;"Государственная платформа Газпром"</p>
+        <picture>
+          <source type="image/webp" srcset="img/img/license.webp">
+          <img class="license__img" src="img/img/license.jpg" height="389" width="275" alt="Лицензия">
+        </picture>
+
+        <a data-fancybox="gallery1"
+        class="btn"
+        href="img/img/license.jpg">Увеличить фото</a>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">
     Footer
   </footer>
+  <script src="js/jquery.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/ion.rangeSlider.min.js"></script>
 </body>
 
 </html>

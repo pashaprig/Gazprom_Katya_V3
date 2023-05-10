@@ -20,6 +20,12 @@
       outline: 1px solid $main-color;
     }
   }
+
+  &--range {
+    justify-content: space-around;
+    min-width: 530px;
+    height: 358px;
+  }
 }
 
 .form__heading {
