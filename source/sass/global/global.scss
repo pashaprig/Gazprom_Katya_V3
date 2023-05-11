@@ -37,6 +37,14 @@ a {
 a,
 button {
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .btn {
@@ -69,7 +77,6 @@ button {
 }
 
 .container {
-  flex-grow: 1;
   box-sizing: border-box;
   max-width: 1280px;
   margin: 0 auto;

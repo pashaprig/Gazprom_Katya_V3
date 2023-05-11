@@ -1,6 +1,24 @@
 .promo {
   position: relative;
   min-height: 550px;
+
+  &--revers {
+    margin-bottom: 100px;
+
+    .promo__video-bcg {
+      order: 2;
+    }
+
+    .promo__form {
+      order: 1;
+      margin-right: -40px;
+      margin-left: 0;
+    }
+
+    .promo__wrapper  {
+      justify-content: end;
+    }
+  }
 }
 
 .promo__wrapper {
@@ -11,7 +29,7 @@
 .promo__video-bcg {
   box-sizing: border-box;
   height: 550px;
-  width: 80%;
+  width: 71%;
   padding: 70px 90px;
   background: $menu-btn;
 }
