@@ -1,0 +1,26 @@
+.projects {
+  padding-bottom: 150px;
+}
+
+.projects__list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.projects__item {
+  min-width: 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  a {
+    box-sizing: border-box;
+    max-width: 276px;
+  }
+}
+
+.projects__img {
+  max-width: 100%;
+  object-fit: cover;
+}

@@ -5,6 +5,7 @@
 .start__info-wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 150px;
 
   &:last-of-type {
@@ -14,15 +15,11 @@
 
 .start__heading {
   max-width: 808px;
-  margin: 0 auto;
-  margin-bottom: 110px;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 49px;
 
-  &:last-of-type {
+  &--mb20 {
     margin-bottom: 20px;
   }
+
 }
 
 .start__sub-heading {

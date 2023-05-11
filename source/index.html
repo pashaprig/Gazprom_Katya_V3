@@ -32,7 +32,7 @@
           <li class="main-nav__item"><a href="#why">Почему мы</a></li>
           <li class="main-nav__item"><a href="#start">Начало работы</a></li>
           <li class="main-nav__item"><a href="#profit">Расчитать прибыль</a></li>
-          <li class="main-nav__item"><a href="#proects">Наши проекты</a></li>
+          <li class="main-nav__item"><a href="#projects">Наши проекты</a></li>
           <li class="main-nav__item"><a href="#partners">Партнеры</a></li>
           <li class="main-nav__item"><a href="#leadform1" class="btn">Подать заявку</a></li>
         </ul>
@@ -88,7 +88,7 @@
             }
           </style>
           <form action="#" class="form" method="POST" id="leadform1">
-            <h2 class="form__heading">Начните зарабатывать на государственном газе!</h2>
+            <h2 class="form__heading heading">Начните зарабатывать на государственном газе!</h2>
             <input type="text" name="name" id="name" placeholder="Имя Фамилия">
             <input type="email" name="email" id="email" placeholder="Эл. адрес">
             <input type="tel" name="phone1" placeholder="" id="phone1" />
@@ -110,7 +110,7 @@
 
     <section class="sanctions">
       <div class="sanctions__wrapper container">
-        <h1 class="sanctions__heading">Газпрому не страшны санкции</h1>
+        <h1 class="sanctions__heading heading">Газпрому не страшны санкции</h1>
         <div class="sanctions__bottom">
           <div class="sanctions__text">
             <p class="sanctions__about">Несмотря на санкции, количество клиентов у Газпрома остается значительным, спрос
@@ -129,7 +129,7 @@
 
     <section class="why" id="why">
       <div class="why__wrapper container">
-        <h2 class="why__heading">Почему это выгодно для обычных граждан</h2>
+        <h2 class="why__heading heading">Почему это выгодно для обычных граждан</h2>
         <ul class="why__list">
           <li class="why__item">
             <svg class="different" width="100" height="100" viewBox="0 0 100 100" fill="none"
@@ -166,7 +166,7 @@
     <section class="start" id="start">
       <div class="start__wrapper container">
         <div class="start__info-wrapper">
-          <h2 class="start__heading">Что нужно сделать, чтобы начать зарабатывать c Газпром уже сейчас?</h2>
+          <h2 class="start__heading heading">Что нужно сделать, чтобы начать зарабатывать c Газпром уже сейчас?</h2>
           <div class="start__info">
             <picture>
               <source type="image/webp" srcset="img/img/worker.webp">
@@ -184,7 +184,7 @@
         </div>
 
         <div class="start__info-wrapper">
-          <h3 class="start__heading">Алексей Миллер</h3>
+          <h3 class="start__heading start__heading--mb20 heading">Алексей Миллер</h3>
           <h4 class="start__sub-heading">председатель правления совета директоров ПАО «Газпром»</h4>
           <div class="start__info start__info--revers-order">
             <picture>
@@ -208,7 +208,7 @@
 
     <section class="profit" id="profit">
       <div class="profit__wrapper container">
-        <h2 class="profit__heading">Расчитайте свой заработок</h2>
+        <h2 class="profit__heading heading">Расчитайте свой заработок</h2>
         <form action="#" method="post" class="form form--range">
           <div class="flex flex-col text-center font-bold mb-4 sm:mb-10 px-5">
             <label class="block text-center font-bold mb-2">Ваша инвестиция</label>
@@ -219,19 +219,15 @@
             <label class="block text-center font-bold ">Ваша прибыль</label>
             <h3 class="text-2xl text-center font-bold font-ubuntu mt-5" id="calcResult"></h3>
           </div>
-          <div class="flex mb-4 justify-center">
-            <a href="#register" class="inline-block  text-center w-56 font-sans font-bold transition bg-btn-primary hover:bg-btn-hover
-         text-white rounded py-3">
-              Подать заявку
-            </a>
-          </div>
+
+          <a href="#leadform1" class="btn">Подать заявку</a>
         </form>
       </div>
     </section>
 
     <section class="license">
       <div class="license__wrapper container">
-        <h2 class="license__heading">Лицензия профессионального участника рынка ценных бумаг«Газпром-Инвест»</h2>
+        <h2 class="license__heading heading">Лицензия профессионального участника рынка ценных бумаг«Газпром-Инвест»</h2>
         <p class="license__about">Лицензия №045-13980-02000 От 13.12.2019 Профессиональной и биржевой деятельности по
           ценным бумагам ПАО&nbsp;"Государственная платформа Газпром"</p>
         <picture>
@@ -242,6 +238,87 @@
         <a data-fancybox="gallery1"
         class="btn"
         href="img/img/license.jpg">Увеличить фото</a>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="projects__wrapper container">
+        <h2 class="projects__heading heading">Проекты Газпрома, открытые для участия</h2>
+        <ul class="projects__list">
+          <li class="projects__item">
+            <picture>
+              <source type="image/webp" srcset="img/img/power.webp">
+              <img class="projects__img" src="img/img/power.jpg" height="343" width="358" alt="Трубопровод">
+            </picture>
+            <h3 class="projects__subheading">Сила Сибири</h3>
+            <p class="projects__about">от 50 000 рублей ежемесячно Крупнейшая система транспортировки газа на востоке России</p>
+            <a href="#leadform1" class="btn">Подать заявку</a>
+          </li>
+
+          <li class="projects__item">
+            <picture>
+              <source type="image/webp" srcset="img/img/nord.webp">
+              <img class="projects__img" src="img/img/nord.jpg" height="343" width="358" alt="Укладчик кабеля">
+            </picture>
+            <h3 class="projects__subheading">Северный поток</h3>
+            <p class="projects__about">25% гарантированных выплат ежемесячно
+              Газопровод, напрямую соединивший Россию и Европу</p>
+            <a href="#leadform1" class="btn">Подать заявку</a>
+          </li>
+
+          <li class="projects__item">
+            <picture>
+              <source type="image/webp" srcset="img/img/stream.webp">
+              <img class="projects__img" src="img/img/stream.jpg" height="343" width="358" alt="Трубопровод">
+            </picture>
+            <h3 class="projects__subheading">Турецкий поток</h3>
+            <p class="projects__about">44% гарантированных выплат ежемесячно<br>Экспорт газа в Турцию, Южную и Юго-Восточную Европу</p>
+            <a href="#leadform1" class="btn">Подать заявку</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="partners" id="partners">
+      <div class="partners__wrapper container">
+        <h2 class="projects__heading heading">Наши партнеры</h2>
+        <ul class="partners__list">
+          <li class="partners__item partners__item--start">
+            <svg width="179" height="58">
+              <use xlink:href="img/sprite.svg#visa"></use>
+            </svg>
+          </li>
+
+          <li class="partners__item">
+            <svg width="292" height="71">
+              <use xlink:href="img/sprite.svg#yandex"></use>
+            </svg>
+          </li>
+
+          <li class="partners__item partners__item--end">
+            <svg width="272" height="78">
+              <use xlink:href="img/sprite.svg#nasdaq"></use>
+            </svg>
+          </li>
+
+          <li class="partners__item partners__item--start">
+            <svg width="216" height="99">
+              <use xlink:href="img/sprite.svg#qiwi"></use>
+            </svg>
+          </li>
+
+          <li class="partners__item">
+            <svg width="126" height="98">
+              <use xlink:href="img/sprite.svg#master"></use>
+            </svg>
+          </li>
+
+          <li class="partners__item partners__item--end">
+            <svg width="272" height="77">
+              <use xlink:href="img/sprite.svg#mir"></use>
+            </svg>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
