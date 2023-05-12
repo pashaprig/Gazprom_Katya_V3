@@ -4,6 +4,8 @@ class App {
   init() {
     this.initMobileMenu();
     this.initRange();
+    this.showHideLicense();
+    this.scroll();
   }
 
   initMobileMenu() {
@@ -75,6 +77,58 @@ class App {
         },
       });
     });
+  }
+
+  showHideLicense() {
+    const $openBtn = document.querySelector('[data-open-modal]')
+    const $closeBtn = document.querySelector('[data-close-modal]')
+    const $modal = document.querySelector('[data-modal]')
+    const $licenseImg = document.querySelector('.license__img')
+
+    $licenseImg.addEventListener('click', showModal);
+    $openBtn.addEventListener('click', showModal);
+
+    function showModal() {
+      $modal.showModal();
+    }
+
+    $closeBtn.addEventListener('click', () => {
+      $modal.close()
+    })
+
+    $modal.addEventListener('click', e => {
+      const dialogDimentions = $modal.getBoundingClientRect()
+      if (
+        e.clientX < dialogDimentions.left ||
+        e.clientX > dialogDimentions.right ||
+        e.clientY < dialogDimentions.top ||
+        e.clientY > dialogDimentions.bottom
+      ) {
+        $modal.close()
+      }
+    })
+  }
+
+  scroll() {
+    const circles = document.querySelectorAll('.start__circle')
+
+    function resetColors() {
+      circles.forEach(c => { c.classList.remove('start__circle--active') })
+    }
+
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset < 1800) {
+        resetColors();
+        circles[0].classList.add('start__circle--active')
+      } else if (window.pageYOffset < 2200) {
+        resetColors();
+        circles[1].classList.add('start__circle--active')
+      } else if (window.pageYOffset > 2200) {
+        resetColors();
+        circles[2].classList.add('start__circle--active')
+      }
+    })
+
   }
 }
 

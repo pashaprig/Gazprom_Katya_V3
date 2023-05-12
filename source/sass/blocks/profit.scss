@@ -12,3 +12,24 @@
   margin-bottom: 50px;
   color: $basic-white;
 }
+
+.profit__amount {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.profit__sum {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+.profit__img {
+  position: relative;
+  top: 10px;
+  margin: 0 auto;
+}

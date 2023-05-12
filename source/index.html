@@ -210,16 +210,16 @@
       <div class="profit__wrapper container">
         <h2 class="profit__heading heading">Расчитайте свой заработок</h2>
         <form action="#" method="post" class="form form--range">
-          <div class="flex flex-col text-center font-bold mb-4 sm:mb-10 px-5">
-            <label class="block text-center font-bold mb-2">Ваша инвестиция</label>
+          <div class="profit__amount">
+            <label class="">Ваша инвестиция</label>
             <span id="profitValue">18000 руб.</span>
-            <input type="text" class="js-range-slider" name="my_range" value="150" />
           </div>
-          <div class="flex flex-col mb-5">
-            <label class="block text-center font-bold ">Ваша прибыль</label>
-            <h3 class="text-2xl text-center font-bold font-ubuntu mt-5" id="calcResult"></h3>
+          <input type="text" class="js-range-slider" name="my_range" value="150" />
+          <img class="profit__img" src="img/img/line.png" width="420" height="5" alt="">
+          <div class="profit__sum">
+            <label class="">Ваша прибыль</label>
+            <h3 class="" id="calcResult"></h3>
           </div>
-
           <a href="#leadform1" class="btn">Подать заявку</a>
         </form>
       </div>
@@ -235,9 +235,17 @@
           <img class="license__img" src="img/img/license.jpg" height="389" width="275" alt="Лицензия">
         </picture>
 
-        <a data-fancybox="gallery1"
-        class="btn"
-        href="img/img/license.jpg">Увеличить фото</a>
+        <button class="btn" data-open-modal>Увеличить фото</button>
+
+        <dialog data-modal class="license__dialog">
+          <div class="license__dialog-wrapper">
+            <picture>
+              <source type="image/webp" srcset="img/img/license.webp">
+              <img class="license__img" src="img/img/license.jpg" height="942" width="666" alt="Лицензия">
+            </picture>
+            <button data-close-modal><span class="main-nav__open-btn-text visually-hidden">Закрыть</span></button>
+          </div>
+        </dialog>
       </div>
     </section>
 

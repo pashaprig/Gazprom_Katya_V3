@@ -13,3 +13,60 @@
   padding: 0 210px;
   text-align: center;
 }
+
+.license__dialog {
+  padding: 15px;
+  padding-top: 0;
+  border: none;
+  &::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.license__dialog-wrapper {
+  position: relative;
+
+  button {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    background: transparent;
+    border: none;
+
+    // Крестик на css
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      right: 0;
+      width: 40px;
+      height: 6px;
+      background-color: $main-color;
+      border-radius: 15px;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover::before,
+    &:hover::after {
+      opacity: 0.6;
+    }
+
+    &:active::before,
+    &:active::after {
+      opacity: 0.3;
+    }
+  }
+}
