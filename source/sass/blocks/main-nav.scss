@@ -28,7 +28,12 @@
   &--opened {
     z-index: 2;
   }
-}
+
+  @media (max-width: $tablet-width) {
+    padding-top: 150px;
+    height: 450px;
+  }
+}s
 
 .main-nav--nojs .main-nav__toggle {
   display: none;
@@ -92,19 +97,30 @@
   border: none;
   border-radius: 40px;
   cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    top: 40px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+  }
 }
 
 // Бургер на css
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 3px;
   right: 0;
   width: 45px;
   height: 6px;
   background-color: $menu-btn;
   box-shadow: 0 12px 0 0 $menu-btn, 0 24px 0 0 $menu-btn;
   border-radius: 15px;
+
+  @media (max-width: $tablet-width) {
+    width: 35px;
+  }
 }
 
 .main-nav--closed .main-nav__toggle {

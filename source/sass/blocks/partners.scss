@@ -1,15 +1,20 @@
 .partners {
   padding-bottom: 150px;
-}
 
-.projects__heading {
-  text-align: center;
+  @media (max-width: $tablet-width) {
+    padding-bottom: 75px;
+  }
 }
 
 .partners__list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 100px;
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
 }
 
 .partners__item {
@@ -31,5 +36,13 @@
 
   &:hover svg {
     fill: $menu-btn;
+  }
+
+  @media (max-width: $tablet-width) {
+    justify-content: center;
+
+    svg {
+      max-width: 100%;
+    }
   }
 }

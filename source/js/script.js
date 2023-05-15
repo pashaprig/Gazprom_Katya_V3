@@ -44,6 +44,7 @@ class App {
       const navLinckHandleClick = () => {
         navMain.classList.add('main-nav--closed');
         navMain.classList.remove('main-nav--opened');
+        $why.classList.remove('why--invert-color');
       }
 
       links.forEach(link => {
@@ -110,6 +111,19 @@ class App {
   }
 
   scroll() {
+    let scrollToFirst, scrollToLast;
+    const deviceWidth = document.documentElement.clientWidth
+
+    if (deviceWidth > 768) {
+      // desktop
+      scrollToFirst = 2200;
+      scrollToLast =2600
+    } else {
+      // mobile
+      scrollToFirst = 3400;
+      scrollToLast = 3800
+    }
+
     const circles = document.querySelectorAll('.start__circle')
 
     function resetColors() {
@@ -117,13 +131,13 @@ class App {
     }
 
     window.addEventListener('scroll', () => {
-      if (window.pageYOffset < 1800) {
+      if (window.pageYOffset < scrollToFirst) {
         resetColors();
         circles[0].classList.add('start__circle--active')
-      } else if (window.pageYOffset < 2200) {
+      } else if (window.pageYOffset < scrollToLast) {
         resetColors();
         circles[1].classList.add('start__circle--active')
-      } else if (window.pageYOffset > 2200) {
+      } else if (window.pageYOffset > scrollToLast) {
         resetColors();
         circles[2].classList.add('start__circle--active')
       }

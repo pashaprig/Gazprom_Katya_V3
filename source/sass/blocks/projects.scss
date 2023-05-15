@@ -1,11 +1,20 @@
 .projects {
   padding-bottom: 150px;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 75px;
+  }
 }
 
 .projects__list {
   display: flex;
   gap: 30px;
   justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    gap: 50px;
+  }
 }
 
 .projects__item {
@@ -18,9 +27,22 @@
     box-sizing: border-box;
     max-width: 276px;
   }
+
+  @media (max-width: $tablet-width) {
+    a {
+      max-width: unset;
+    }
+  }
 }
 
 .projects__img {
   max-width: 100%;
   object-fit: cover;
+}
+
+.projects__subheading {
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 29px;
+  }
 }

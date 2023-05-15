@@ -1,5 +1,15 @@
 .license {
   padding: 150px 0;
+
+  @media (max-width: $tablet-width) {
+    padding: 75px 0;
+  }
+}
+
+.license__heading {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .license__wrapper {
@@ -7,19 +17,38 @@
   flex-direction: column;
   align-items: center;
   gap: 25px;
+
+  @media (max-width: $tablet-width) {
+    button {
+      width: 100%;
+    }
+  }
 }
 
 .license__about {
   padding: 0 210px;
   text-align: center;
+
+  @media (max-width: $tablet-width) {
+    padding: 0;
+    text-align: left;
+  }
 }
 
 .license__dialog {
   padding: 15px;
   padding-top: 0;
   border: none;
+
   &::backdrop {
     background: rgba(0, 0, 0, 0.5);
+  }
+
+  @media (max-width: $tablet-width) {
+    box-sizing: border-box;
+    min-width: 100%;
+    margin: 0;
+    padding: 15px;
   }
 }
 
@@ -68,5 +97,15 @@
     &:active::after {
       opacity: 0.3;
     }
+  }
+}
+
+.license__img {
+  object-fit: contain;
+  max-height: 90vh;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    max-height: 85vh;
   }
 }

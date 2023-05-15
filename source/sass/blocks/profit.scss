@@ -11,6 +11,11 @@
 .profit__heading {
   margin-bottom: 50px;
   color: $basic-white;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+    text-shadow: 3px 0px 7px grey;
+  }
 }
 
 .profit__amount {
@@ -32,4 +37,9 @@
   position: relative;
   top: 10px;
   margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    top: 0;
+    width: 90%;
+  }
 }

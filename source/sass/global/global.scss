@@ -83,7 +83,7 @@ button {
   padding: 0 96px;
 
   @media (max-width: $tablet-width) {
-    padding: 0 16px;
+    padding: 0 20px;
   }
 }
 
@@ -92,5 +92,12 @@ button {
   text-align: center;
   font-weight: 600;
   font-size: 40px;
-  line-height: 49px
+  line-height: 49px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 50px;
+    text-align: left;
+    font-size: 32px;
+    line-height: 39px;
+  }
 }

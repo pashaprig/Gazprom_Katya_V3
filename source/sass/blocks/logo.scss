@@ -1,4 +1,16 @@
+.logo {
+  svg {
+    fill: $main-color;
+  }
 
-.logo svg {
-  fill: $main-color;
+  @media (max-width: $tablet-width) {
+    &--mobile-mb50 {
+      margin-bottom: 50px;
+    }
+
+    svg {
+      width: 126px;
+      height: 62px;
+    }
+  }
 }

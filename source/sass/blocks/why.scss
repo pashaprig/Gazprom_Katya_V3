@@ -34,6 +34,16 @@
       }
     }
   }
+
+  @media (max-width: $tablet-width) {
+    padding: 75px 0;
+
+    .why__item {
+      svg {
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 
 .why__wrapper {
@@ -49,4 +59,14 @@
 .why__list {
   display: flex;
   gap: 100px;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .why__item {
+    max-width: 180px;
+  }
 }

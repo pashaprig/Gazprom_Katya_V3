@@ -5,11 +5,23 @@
     box-sizing: border-box;
     max-width: 276px;
   }
+
+  @media (max-width: $tablet-width) {
+    padding: 75px 0;
+
+    a {
+      max-width: 100%;
+    }
+  }
 }
 
 .sanctions__bottom {
   display: flex;
   gap: 47px;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+  }
 }
 
 .sanctions__about {
@@ -18,6 +30,27 @@
   &:last-of-type {
     margin-bottom: 50px;
   }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
+  }
 }
 
+.sanctions__text {
+  @media (max-width: $tablet-width) {
+    order: 2;
+  }
+}
 
+.sanctions__img {
+  object-fit: cover;
+
+  @media (max-width: $tablet-width) {
+    order: 1;
+    max-width: 100%;
+  }
+}
